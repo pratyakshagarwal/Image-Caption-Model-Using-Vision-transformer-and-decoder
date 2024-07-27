@@ -102,3 +102,4 @@ epoch  train_loss  test_loss  train_perplexity  test_perplexity  elapsed_time
 
 - Pratyaksh Agarwal: pratyakshagarwal93@gmail.com
 - [Linkedin](https://www.linkedin.com/in/pratyaksh-agarwal-3673b7282/)
+ > If you need access to the trained model, please message me directly.
