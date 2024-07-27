@@ -58,7 +58,7 @@ python train.py
 
 ## **Datasets**
 The `Flickr30k` dataset is a standard benchmark for sentence-based image description. It includes 158k captions with 244k coreference chains, linking mentions of the same entities across different captions for the same image, and associating them with 276k manually annotated bounding boxes.
-- [Flickr Image Dataset](https://www.kaggle.com/search?q=flickr-image-dataset)
+- [Flickr Image Dataset](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset)
 
 ## **Training**
 - **Training Procedure:** A `Trainer` class handles the training process, requiring training parameters, model parameters, datasets (train and test), and a tokenizer as inputs. The model is trained for nine epochs, with the first two being frozen epochs where the Vision Transformer is not trained. The learning rate remains constant throughout. TensorBoard is integrated for visualizations. Metrics such as `CrossEntropyLoss and Perplexity` evaluate performance. The `Trainer` class logs metric values for every batch through progress bars.
@@ -70,14 +70,15 @@ The `Flickr30k` dataset is a standard benchmark for sentence-based image descrip
 - **Performance:** The table below summarizes the model's performance over nine epochs:
 ```plaintext
 epoch  train_loss  test_loss  train_perplexity  test_perplexity  elapsed_time
-    1    9.619083   4.740633      15049.250000       114.506660    894.121940
-    2    4.269005   4.000910         71.450493        54.647873   1766.997252
-    3    3.717849   3.686208         41.175720        39.893265   2640.156239
-    4    3.389390   3.512315         29.647861        33.525806   3586.005233
-    5    3.074101   3.419177         21.630438        30.544275   4530.298989
-    6    2.751475   3.430223         15.665730        30.883528   5473.408180
-    7    2.375438   3.653804         10.755728        38.621323   6416.665554
-    8    1.976279   3.985042          7.215847        53.787567   7361.272759
+    1    9.560091   4.823745      14187.137695       124.430183    947.996540
+    2    4.347049   4.018485         77.250183        55.616760   1872.139906
+    3    3.760170   3.698693         42.955750        40.394485   2873.441917
+    4    3.414683   3.488083         30.407305        32.723145   3873.856828
+    5    3.143021   3.419183         23.173771        30.544466   4874.781454
+    6    2.875226   3.361895         17.729422        28.843794   5875.508302
+    7    2.600982   3.449594         13.476965        31.487591   6875.503287
+    8    2.311680   3.591445         10.091360        36.286480   7874.355850
+    9    2.031243   3.742320          7.623554        42.195782   8872.380190
 ```
 
 - **Metrics Visualization: **
