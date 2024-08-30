@@ -149,8 +149,8 @@ if __name__ == '__main__':
     image_paths = [
         r"images\1000092795.jpg",
         r"images\1000268201.jpg",
-        r"images\1000366164.jpg",
-        r"images\1001573224.jpg"
+        r"images\1000344755.jpg",
+        r"images\1000523639.jpg"
     ]
 
     # Initialize the prediction pipeline

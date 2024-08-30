@@ -1,0 +1,5 @@
+\images
+image_caption_model.pt
+preprocessed_data.csv
+results.csv
+/__pycache__
